@@ -1,1 +1,47 @@
+Para la determinación del Simpson diversity index, usamos en R el paquete "vegan"
+Para la instalación de usa el comando: install.packages("vega")
+Posterior a esto importamos nuestra tabla con la información acerca de la diversidad
+donde los datos deben ubicarse en columnas, una representando el número de especies
+o variables diferentes que tengamos, y en la otra columna, el total de subvariables
+que tiene cada variable.
+Los comandos a colocar son:
+
+diversity(input_data,index = "simpson")
+
+En este comando, nosotros colocamos el nombre de la input daya, y en index, el nombre
+del indice de diversidad que vamos a usar, como simpson o shannon.
+
+A continuación, si queremos gráficar nuestros resultados en un histograma usamos los
+siguientes comandos:
+
+simpson <- diversity(dune, "simpson")
+simpson
+
+hist(simpson)
+
+El índice también puede ser obtneido de forma manual con la fórmula 
+
+D = 1 - Sumantoria de n (n-1)/N(N-1)
+
+Donde n representa el número de individuos de cada especie
+N el número total de individuos de todas las especies
+
+D = 1 - 5(5-1)/14(14-1)
+D = 1 - 20/182
+
+Para hacer el input_date se debe ubicar en cada fila lo que corresponde a el
+conjunto de muestras o lugar, en cada columa se ubica la especie, o el dato
+que se quiera contabilizar, ingresando el número total de datos que corresponden
+a dicha columna, ejm:
+
+     ST45	ST1774	ST307	ST629	ST13
+KPEC	7	     1	    1	    4	   1
+
+En este ejemplo, en la fila está ubicado el conjunto de datos que corresponde
+a nuestra muestra de K.pneumoniae, la suma total de esta fila es 14, 14 aislados.
+En cada columna tenemos ubicados los diferentes MLST encontrados y el número
+de aislados con un determinado ST está colocado debajo de la respectiva columna.
+
+El SDI (simpson diversity index) en este ejemplo es de: 0.6530612
+
 
