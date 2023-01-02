@@ -45,7 +45,9 @@ de aislados con un determinado ST está colocado debajo de la respectiva columna
 El SDI (simpson diversity index) en este ejemplo es de: 0.6530612
 
 Usando el siguiente tutorial se puede comprender mejor como usar diversos indices
-de diversidad: https://www.flutterbys.com.au/stats/tut/tut13.2.html 
+de diversidad: 
+https://www.flutterbys.com.au/stats/tut/tut13.2.html
+https://www.statology.org/simpsons-diversity-index/
 
 #En este mismo repositorio se puede encontrar un documento en R para ser utilizado
 en la determinación del índice de Simpson.
