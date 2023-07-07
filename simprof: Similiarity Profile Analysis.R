@@ -12,5 +12,6 @@ Kpsimprof <- simprof(Kp_AMR_VF_150922, num.expected=1000, num.simulated=999,
                      undef.zero=TRUE, warn.braycurtis=TRUE)
 
 simprof.plot(Kpsimprof, leafcolors=NA, plot=TRUE, fill=TRUE,
-             leaflab="none", siglinetype=1)
+             leaflab="none", siglinetype=1) 
+
 
